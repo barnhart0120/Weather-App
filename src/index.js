@@ -84,7 +84,7 @@ function getCurrentLocation(event) {
 
 function convertToCelcius(event) {
   event.preventDefault();
-  let temperatureShown = document.querySelector(".current-temp");
+  let temperatureShown = document.querySelector("#current-temp");
   let temperature = temperatureShown.innerHTML;
   temperatureShown.innerHTML = Math.round((temperature - 32) * 0.56);
 }
